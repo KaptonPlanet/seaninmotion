@@ -1,0 +1,184 @@
+@import url("https://use.typekit.net/loq3bbd.css");
+
+.mybackgroundthing{  
+background: #01658F;
+background: -webkit-radial-gradient(center, #01658F, #010714);
+background: -moz-radial-gradient(center, #01658F, #010714);
+background: radial-gradient(ellipse at center, #01658F, #010714) !important; }
+
+    html {
+        background-color: black;
+        text-align: center;
+        color:#fff; font-family: futura-pt, sans-serif;
+    }
+
+    body, p {
+        opacity: 1;
+        transition: 1s opacity;
+        color:#fff; font-family: brandon-grotesque , sans-serif;font-weight: 200; font-size: 1.1em; padding-right: 10px;
+    }
+    body.fade-out {
+        opacity: 0;
+        transition: none;
+        color:#fff; font-family: brandon-grotesque , sans-serif;font-weight: 200; 
+    }
+
+    h1 {
+        color:#42b6f4; font-family: futura-pt, sans-serif; font-weight: 500; text-align: center; text-transform: uppercase; font-size: 4em;}
+
+    h2{ color:#fff; font-family: brandon-grotesque , sans-serif; font-weight: 400; font-size: 1.1em; text-transform: uppercase; }
+
+a {
+  color: #fff !important;
+  text-decoration: none; font-family: brandon-grotesque , sans-serif;font-weight: 200; text-transform: uppercase;
+  outline: 0;
+}
+
+a:hover {
+color:#42b6f4 !important;
+
+}
+
+.headerborder1{
+	width:50%;
+	border-bottom: 1px solid #fff;
+}
+.headerborder2{
+	width:50%;
+	border-top: 1px solid #fff;
+}
+
+.seannav{
+color:#fff; font-family: brandon-grotesque , sans-serif;font-weight: 200; text-transform: uppercase;text-align: center; 
+border: 1px solid #fff;
+border-radius: 0px;
+padding: 05px 15px 05px 15px;
+text-align: center;
+}
+
+.seannav:hover{
+border: 1px solid #42b6f4;
+    transition: all .2s ease-in-out;
+  color: #42b6f4 !important;}
+
+
+
+.workgridgrad{
+         animation: colorchange 2s forwards; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+         -webkit-animation: colorchange 2s forwards; /* Chrome and Safari */
+
+}
+
+ @keyframes colorchange
+    {
+      0%   {background: #3E4551;}
+      100% {background: #2E2E2E;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: #3E4551;}
+      100% {background: #2E2E2E;}
+    }
+
+
+.hoverable {
+ -webkit-box-shadow:none;
+ box-shadow:none;
+ -webkit-transition:all .2s ease-in-out;
+ -o-transition:all .2s ease-in-out;
+ transition:all .2s ease-in-out
+}
+
+.hoverable:hover {
+ -webkit-box-shadow:0 8px 17px 0 rgba(0,0,0,.4),0 6px 20px 0 rgba(0,0,0,.4);
+ box-shadow:0 8px 17px 0 rgba(0,0,0,.4),0 6px 20px 0 rgba(0,0,0,.4);
+ -webkit-transition:all .2s ease-in-out;
+ -o-transition:all .2s ease-in-out;
+ transition:all .2s ease-in-out
+}
+
+.img-fluid{
+border: 3px solid #919191;}
+
+.frameborder{border: 3px solid #919191; border-radius: 0.25rem}
+
+strong{ font-weight: 600 !important; }
+
+
+/* breakpoint rules */
+
+@media only screen and (max-width:576px) {
+.col-sm {
+padding-top: 25px;
+padding-bottom: : 25px;
+
+}
+
+ br {
+        display: none;
+    }
+
+ .pt-2{
+
+  padding-top: 30px !important;
+ }
+}
+
+@media only screen and (max-width:992px) {
+.col-sm {
+padding: 5px;}
+
+.row{
+     /*! flex-direction: column !important; */
+}
+ 
+
+ .col-md-4{float: center !important;}
+  .col-md-8{float: center !important;margin-top: -15px;}
+}
+
+@media only screen and (max-width:950px) {
+.headerborder1{
+    width:100%;
+ 
+}
+.headerborder2{
+    width:100%;
+    
+}
+.seannav{
+    width: 100% !important;
+}
+
+ .pt-2{
+
+  padding-top: 30px !important;
+ }
+
+}
+
+@media only screen and (max-width:768px) {
+.col-sm {
+padding: 5px;}
+
+
+a{
+    width: 100% !important;
+}
+
+ br {
+        display: none;
+    }
+ p{text-align: center !important;}
+
+ h1{ font-size: 3em !important; text-align: center !important; }
+
+ h2{ font-size: 0.9em !important; text-align: center !important; }
+}
+
+
+@media only screen and (max-width:1200px) {
+p{font-size: 1rem;}
+}
